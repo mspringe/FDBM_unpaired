@@ -1,7 +1,7 @@
 # Fractional Schrödinger Bridge Flow
 
 
-## Install environment
+## install environment
 
 Make sure you have cuda 12.x installed on your machine
 
@@ -30,7 +30,7 @@ rm $ZIP_FILE
 For latent space modelling be sure to generate your own latents and save them as numpy arrays (see `src/data/latent_datasets`)
 
 
-## Run training
+## run training
 
 Exemplary command MNIST &harr; EMNIST:
 
