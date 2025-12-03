@@ -58,6 +58,6 @@ python -m src.MAfBM.eval_bid --pi0 MNIST --pi1 EMNIST \
     --MAfBM_norm True \
     --batch_size 128 \
     --micro_batch_size 128 \
-    --ckpt_pretraining  \
+    --ckpt_pretraining <path to your checkpoint> \
     --log_dir logs/ --out_dir outputs/H0.5
 ```
