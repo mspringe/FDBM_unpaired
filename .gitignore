@@ -1,0 +1,21 @@
+# (py)caches
+**cache*
+# binaries
+**.pkl
+**.cpkt
+**.pt
+**.pth
+**.sif
+**.tar
+# data storage 
+**datasets/
+# jupyter nobteooks
+**notebook/
+**notebooks/
+**.ipynb
+**.ipynb
+# logs and outputs
+**wandb/
+**output*/
+**logs/
+**runs/
