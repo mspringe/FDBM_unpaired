@@ -1,4 +1,11 @@
-# Fractional Schrödinger Bridge Flow
+# Fractional Diffusion Bridge Models for unpaired data
+
+This repository holds the official implementation of Fractional Diffusion Bridge Models (FDBM) for unpaired data.
+
+<video width="600" controls>
+  <source src="media/figure.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ## install environment
