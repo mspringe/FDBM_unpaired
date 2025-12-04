@@ -17,7 +17,7 @@ Make sure you have cuda 12.x installed on your machine
 MNIST & EMNIST datasets will be downloaded automatically, if they don't exist already.
 
 
-You'll have to download AFHQ manually:
+You will have to download AFHQ manually:
 
 ```
 URL=https://www.dropbox.com/s/t9l9o3vsx2jai3z/afhq.zip?dl=0
@@ -68,10 +68,11 @@ python -m src.MAfBM.eval_bid --pi0 MNIST --pi1 EMNIST \
 
 ## bibtex citation
 
-we kindly ask to cite our work, when using this code
+We kindly ask you to cite our work when using this code.
 
 ```
-@article{nobis2025fractional,
+@article{
+  nobis2025fractional,
   title={Fractional Diffusion Bridge Models},
   author={Nobis, Gabriel and Springenberg, Maximilian and Belova, Arina and Daems, Rembert and Knochenhauer, Christoph and Opper, Manfred and Birdal, Tolga and Samek, Wojciech},
   journal={arXiv preprint arXiv:2511.01795},
