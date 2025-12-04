@@ -2,10 +2,7 @@
 
 This repository holds the official implementation of Fractional Diffusion Bridge Models (FDBM) for unpaired data.
 
-<video width="600" controls>
-  <source src="media/figure.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Watch demo](https://github.com/mspringe/FDBM_unpaired/blob/main/media/figure.gif)
 
 
 ## install environment
@@ -34,7 +31,7 @@ rm $ZIP_FILE
 ```
 
 
-For latent space modelling be sure to generate your own latents and save them as numpy arrays (see `src/data/latent_datasets`)
+For latent space modeling be sure to generate your own latents and save them as numpy arrays (see `src/data/latent_datasets`)
 
 
 ## run training
