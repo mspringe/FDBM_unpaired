@@ -4,6 +4,11 @@ This repository holds the official implementation of Fractional Diffusion Bridge
 
 ![Watch demo](https://github.com/mspringe/FDBM_unpaired/blob/main/media/figure.gif)
 
+<p align="center">
+  <img src="https://github.com/mspringe/FDBM_unpaired/blob/main/media/cat_to_wild_appendix_uhd.png" width="49%" />
+  <img src="https://github.com/mspringe/FDBM_unpaired/blob/main/media/wild_to_cat_appendix_uhd.png" width="49%" />
+</p>
+
 
 ## install environment
 
