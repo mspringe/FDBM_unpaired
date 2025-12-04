@@ -36,7 +36,7 @@ rm $ZIP_FILE
 ```
 
 
-For latent space modeling be sure to generate your own latents and save them as numpy arrays (see `src/data/latent_datasets`)
+For latent space modeling be sure to generate your own latents and save them as numpy arrays (see `src/data/latent_datasets.py`).
 
 
 ## run training
