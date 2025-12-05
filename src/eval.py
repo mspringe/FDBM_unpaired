@@ -3,7 +3,7 @@ This module provides a JAX implemention of alpha-diffusion training, as
 proposed by Bortoli et al. 2024 (see arXiv:2409.09347).
 
 
-Author: Arina Belova, Gabriel Nobis, Maximilian Springenberg
+Author: Maximilian Springenberg
 Affiliation: Fraunhofer HHI
 License: This source code is licensed under the CC-by-NC license found in the
          LICENSE file in the root directory of this source tree.

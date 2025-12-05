@@ -4,7 +4,7 @@ approximation of fractional Brownian motion for Schrödinger Bridge Flows.
 
 All code was written for a markovian approximation of type II Brownian motion.
 
-Author: Arina Belova, Gabriel Nobis, Maximilian Springenberg
+Author: Maximilian Springenberg
 Affiliation: Fraunhofer HHI
 License: This source code is licensed under the CC-by-NC license found in the
          LICENSE file in the root directory of this source tree.
