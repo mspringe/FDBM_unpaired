@@ -86,39 +86,3 @@ def em(apply_fn, params, x, directions, num_steps=40, t_offset=0, eps=1,
         # discretized update of x
         x = x + dx
     return x
-
-
-def pf(apply_fn, params, x, directions, num_steps=20, t_offset=0, eps=1,
-       rngs=None, verbose=False, karras_pred=False, key=None):
-    """
-    Euler (PF) ODE solving method following Bortoli et al. 2024
-    (see arXiv:2409.09347).
-
-    Args:
-        apply_fn: apply function a flax model
-        params: parameterization of model
-        directions: direction of SB (either 1s or 0s)
-        num_steps: number of discretization steps for solver
-        t_offset: offsets the time interval to [t_offset, 1-t_offset]
-        rngs: (optional) random number generators, if e.g. dropout should be
-              used during inference, rather than averaged
-    """
-    train = rngs is not None
-    ts = jnp.linspace(0+t_offset, 1-t_offset, num_steps, dtype=x.dtype)
-    dt = 1/num_steps
-    N = x.shape[0]
-    iterator = tqdm(ts) if verbose else ts
-    for i in iterator:
-        t = jnp.ones((N,), dtype=x.dtype) * i
-        args_1 = (t, directions)
-        args_0 = (1-t, 1-directions)
-        kwargs = dict(rngs=rngs, train=train)
-        if karras_pred:
-            drift_1 = predict(t, eps, apply_fn, params, x, *args_0, **kwargs)
-            drift_0 = predict(1-t, eps, apply_fn, params, x, *args_1, **kwargs)
-        else:
-            drift_1 = eval_model(apply_fn, params, x, *args, **kwargs) #apply_fn(params, x, *args_0, **kwargs)
-            drift_0 = eval_model(apply_fn, params, x, *args, **kwargs) #apply_fn(params, x, *args_1, **kwargs)
-        dx = 0.5 * (drift_1 - drift_0) * dt
-        x = x + dx
-    return x
